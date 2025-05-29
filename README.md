@@ -1,4 +1,4 @@
-# 🚀 E-commerce CQRS Project
+# 🚀 CQRS Template
 
 Este projeto é um template, construída com uma arquitetura **CQRS (Command Query Responsibility Segregation)**, utilizando **.NET 9** e uma stack de tecnologias robustas para garantir escalabilidade, resiliência e alta disponibilidade. O foco principal está na separação explícita entre operações de escrita (Comandos) e leitura (Consultas), otimizando o fluxo de dados e o desempenho.
 
