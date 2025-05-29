@@ -1,0 +1,91 @@
+#!/bin/bash
+
+# Este script cria um arquivo .gitignore na raiz do projeto
+# com exclusões comuns para aplicações .NET.
+
+echo "Criando o arquivo .gitignore na raiz do projeto..."
+
+# Cria o arquivo .gitignore com o conteúdo padrão para projetos .NET
+cat << EOF > .gitignore
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.log
+*.pdb
+*.opendb
+*.tlog
+*.testrunconfig
+*.trx
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+build/
+*.bak
+*.exe
+*.dll
+*.pdb
+*.tmp
+*.log
+
+# NuGet packages
+packages/
+*.nupkg
+*.snupkg
+*.cache
+*.props
+
+# Rider
+.idea/
+*.iml
+
+# Resharper
+*.DotSettings
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+
+# Node.js (if frontend is added later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Entity Framework Core migrations
+# As migrações são código-fonte e devem ser versionadas.
+# Mas os arquivos de snapshot e o banco de dados local não.
+# Se você tiver um arquivo .db local para SQLite, adicione aqui:
+*.db
+*.sqlite
+*.sqlite-journal
+
+# Test Results
+TestResults/
+*.trx
+
+# Publish / Deployment
+publish/
+*.publishproj
+*.pubxml
+
+# Any other files that should be ignored
+*.userprefs
+*.pid
+*.DS_Store # macOS
+Thumbs.db # Windows
+
+# Logs
+logs/
+*.log
+*.txt
+
+EOF
+
+echo "Arquivo '.gitignore' criado com sucesso na raiz do projeto."
+echo "Lembre-se de verificar e ajustar o conteúdo do .gitignore conforme suas necessidades específicas."
+
+[0-9].sh

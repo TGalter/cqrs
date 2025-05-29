@@ -1,0 +1,42 @@
+# Pastas de build do .NET
+**/bin/
+**/obj/
+
+# Pastas de IDE e editor
+.vs/
+.vscode/
+
+# Controle de versão
+.git/
+.gitignore
+
+# Arquivos de pacote
+*.nupkg
+*.zip
+*.tar.gz
+
+# Arquivos de banco de dados e logs
+*.db
+*.sqlite
+*.log
+
+# Arquivos de configuração específicos do ambiente de desenvolvimento (opcional, dependendo de como você gerencia envs)
+# appsettings.Development.json
+
+# Docker files (não precisam estar dentro da imagem)
+Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+
+# Outros arquivos temporários ou de cache
+**/*.tmp
+**/*.user
+**/*.suo
+**/*.bak
+
+# Se houver um projeto frontend na mesma pasta (ex: React, Angular, Vue)
+node_modules/
+dist/
+build/
+
+appsettings.Development.json
