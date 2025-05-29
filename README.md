@@ -98,8 +98,8 @@ Para rodar o projeto, você precisará dos seguintes softwares instalados em sua
 1.  **Clone o Repositório:**
     Abra seu terminal Bash (Git Bash no Windows, ou terminal Linux/macOS) e clone o repositório:
     ```bash
-    git clone https://github.com/TGalter/ec.git
-    cd ec
+    git clone https://github.com/TGalter/cqrs.git
+    cd cqrs
     ```
 
 2.  **Execute o Script de Inicialização:**
