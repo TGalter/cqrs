@@ -1,12 +1,6 @@
-# 🚀 CQRS Template
+# 🚀 CQRS Project
 
 Este projeto é um template, construída com uma arquitetura **CQRS (Command Query Responsibility Segregation)**, utilizando **.NET 9** e uma stack de tecnologias robustas para garantir escalabilidade, resiliência e alta disponibilidade. O foco principal está na separação explícita entre operações de escrita (Comandos) e leitura (Consultas), otimizando o fluxo de dados e o desempenho.
-
----
-
-## 🚧 Status do Projeto
-
-Este projeto está **em desenvolvimento ativo**. Funcionalidades básicas de domínio e persistência estão em progresso, e o pipeline de Change Data Capture (CDC) para indexação no Elasticsearch está estabelecido. Novas funcionalidades e otimizações serão adicionadas continuamente.
 
 ---
 
@@ -98,8 +92,8 @@ Para rodar o projeto, você precisará dos seguintes softwares instalados em sua
 1.  **Clone o Repositório:**
     Abra seu terminal Bash (Git Bash no Windows, ou terminal Linux/macOS) e clone o repositório:
     ```bash
-    git clone https://github.com/TGalter/cqrs.git
-    cd cqrs
+    git clone https://github.com/TGalter/ec.git
+    cd ec
     ```
 
 2.  **Execute o Script de Inicialização:**
@@ -115,7 +109,6 @@ Para rodar o projeto, você precisará dos seguintes softwares instalados em sua
         ```
         Este script irá:
         * Levantar todos os serviços definidos no `docker-compose.yml` em segundo plano.
-        * Aguardar que o PostgreSQL esteja totalmente pronto para conexões.
         * **Executar as migrações do Entity Framework Core localmente**, garantindo que o banco de dados esteja com o esquema atualizado.
         * Aguardar que o Kafka Connect esteja totalmente pronto.
         * Configurar os conectores Debezium (PostgreSQL CDC) e Elasticsearch Sink no Kafka Connect.
@@ -146,26 +139,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues para bugs
 
 ## 📄 Licença
 
-MIT License
-
-Copyright (c) 2025 Thales Galter
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Este projeto é licenciado sob a [**MIT License**](LICENSE). Sinta-se à vontade para utilizar, modificar e distribuir o código de acordo com os termos da licença.
 
 ---
